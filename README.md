@@ -29,22 +29,44 @@ NoSQL 1 home task
 # 📂 Project Structure
 
 Soloshenko_J_nosql_1/
+## 📂 Структура проєкту
+
+```text
+Spotify_Analytics_Project/
+│
 ├── Data
-    ├── raw
-        ├── dataset.csv
+│   └── raw
+│       └── dataset.csv
+│
 ├── queries
-    ├── part2_queries.js
-    ├── part3_aggregations.js
-    ├── part4_indexes.js
+│   ├── part2_queries.js
+│   ├── part3_aggregations.js
+│   └── part4_indexes.js
+│
 ├── Scripts
-    ├── 00_test_connection.py
-    ├── 01_inspect_data.py
-    ├── 02_load_data.py
-    ├── 02_tramsforn.js
+│   ├── 00_test_connection.py
+│   ├── 01_inspect_data.py
+│   ├── 02_load_data.py
+│   └── 03_transform.js
+│
 ├── .env
-├── .gitgnore
+├── .gitignore
 ├── README.md
-├── requrments.txt 
+└── requirements.txt
+```
+
+### Опис структури
+
+- `Data/raw/dataset.csv` — вихідний CSV-файл із Spotify Tracks Dataset.
+- `queries/` — JavaScript-файли з MongoDB-запитами та aggregation pipelines.
+- `Scripts/00_test_connection.py` — перевірка підключення до MongoDB.
+- `Scripts/01_inspect_data.py` — попередній аналіз структури CSV-файлу.
+- `Scripts/02_load_data.py` — очищення та завантаження сирих даних у MongoDB.
+- `Scripts/03_transform.js` — трансформація колекції `tracks_raw` у фінальну структуру `tracks`.
+- `.env` — конфігурація підключення до MongoDB.
+- `.gitignore` — список файлів, які не повинні потрапляти в GitHub.
+- `README.md` — документація проєкту.
+- `requirements.txt` — список Python-залежностей проєкту.
 
 ## Частина 1 — Завантаження даних та проєктування схеми
 Перевірка завантаженних даних через 00_test_conection.py
